@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BankingSystem.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:BankingSystem.Controllers.CustomerBankAccountController.GetAll(System.Int64,System.Threading.CancellationToken)">
+            <summary>
+            Gets all bank accounts for a given customerId
+            </summary>
+            <param name="customerId"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingSystem.Controllers.CustomerBankAccountController.GetById(System.Int64,System.Int64,System.Threading.CancellationToken)">
+            <summary>
+            Gets a bank account for a given customerId and bankAccountId
+            </summary>
+            <param name="customerId"></param>
+            <param name="bankAccountId"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingSystem.Controllers.CustomerBankAccountController.Create(BankingSystem.WebApi.CustomerBankAccount.Application.Commands.CreateCustomerBankAccountCommand,System.Threading.CancellationToken)">
+            <summary>
+            Creates a BankAccount for a given customer. Returns the customerId and bankAccountId in the response if successful.
+            </summary>
+            <param name="command"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingSystem.Controllers.CustomerBankAccountController.Deposit(BankingSystem.WebApi.CustomerBankAccount.Application.Commands.DepositIntoCustomerBankAccountCommand,System.Threading.CancellationToken)">
+            <summary>
+            Deposits the specified amount into the specified customer bank account.
+            </summary>
+            <param name="command"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingSystem.Controllers.CustomerBankAccountController.Withdraw(BankingSystem.WebApi.CustomerBankAccount.Application.Commands.WithdrawFromCustomerBankAccountCommand,System.Threading.CancellationToken)">
+            <summary>
+            Withdraws the specified amount from the specified customer bank account.
+            </summary>
+            <param name="command"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BankingSystem.Controllers.CustomerBankAccountController.Delete(BankingSystem.WebApi.CustomerBankAccount.Application.Commands.DeleteCustomerBankAccountCommand,System.Threading.CancellationToken)">
+            <summary>
+            Deletes a bank account for a customer.
+            </summary>
+            <param name="command"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
