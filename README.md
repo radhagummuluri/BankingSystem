@@ -12,9 +12,9 @@
 *API endpoints*
 ----------------------------------------------------------------------------
 
-1. [HTTPGet] `/api/customerbankaccount/{customerId}` Gets all bank accounts for a given customerId
-2. [HttpGet] `/api/customerbankaccount/{customerId}/bankaccount/{bankAccountId}` Gets a bank account for a given customerId and bankAccountId
-3. [HttpPost] `/api/customerbankaccount/create` Creates a BankAccount for a given customer. Returns the customerId and bankAccountId in the response if successful.
+1. [HTTPGet] `/api/customerbankaccount/{customerId}` Gets all bank accounts for a given `customerId`
+2. [HttpGet] `/api/customerbankaccount/{customerId}/bankaccount/{bankAccountId}` Gets a bank account for a given `customerId` and `bankAccountId`
+3. [HttpPost] `/api/customerbankaccount/create` Creates a BankAccount for a given customer. Returns the `customerId` and `bankAccountId` in the response if successful.
 4. [HttpPost] `/api/customerbankaccount/deposit` Deposits the specified amount into the specified customer bank account.
 5. [HttpPost] `/api/customerbankaccount/withdraw` Withdraws the specified amount from the specified customer bank account.
 6. [HttpDelete] `/api/customerbankaccount/delete` Deletes a bank account for a customer.
