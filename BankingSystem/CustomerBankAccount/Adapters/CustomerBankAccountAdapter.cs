@@ -2,7 +2,6 @@
 
 namespace BankingSystem.WebApi.CustomerBankAccount.Adapters
 {
-    //Not a fan of Automapper (https://medium.com/@mikhailsmal/automapper-considered-harmful-f4de2c6819cb), therefore used the adapter pattern.
     public static class CustomerBankAccountAdapter
     {
         public static IEnumerable<BankAccountDto> ToDtos(this IEnumerable<Domain.BankAccount> customerBankAccounts) =>
